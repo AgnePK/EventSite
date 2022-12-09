@@ -1,0 +1,32 @@
+//IMPORTS
+// font
+//oswald: regular 400 and light 300
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+//source sans pro regular 400 bold 600 and light 300
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap");
+
+//icons
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+//functions
+@import "../node_modules/bootstrap/scss/functions";
+
+//MY COLOURS
+$mainGreen: #BFE4DD;
+$lightGreen: #D3EFF2;
+$mainPink: #F7E1E0;
+$mainGray: #3f3f3f;
+$white: #ffffff;
+$black: #000000;
+//
+
+.navbar{
+    text : white;
+}
+
+
+$primary: $mainGray;
+$dark: $mainGray;
+$light: white;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"

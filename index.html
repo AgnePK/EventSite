@@ -6,18 +6,17 @@
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="css/main.css" />
-		<title>Bootstrap demo</title>
+		<title>Event Site</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg bg-primary text-light navbar-dark">
-			<div class="container-fluid text-white">
-				<a class="navbar-brand " href="#">Navbar</a>
+		<!-- NAV BAR -->
+		<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">music</a>
 				<button
-					class="navbar-toggler text-white"
+					class="navbar-toggler"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent"
@@ -30,10 +29,20 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="#">Genres</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+							<a class="nav-link active" aria-current="page" href="#"
+								>Location</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Date</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>Parking</a
+							>
 						</li>
 						<li class="nav-item dropdown">
 							<a
@@ -57,18 +66,506 @@
 					</ul>
 					<form class="d-flex" role="search">
 						<input
-							class="form-control me-2"
+							class="form-control bg-transparent rounded-start rounded-0 text-white"
 							type="search"
-							placeholder="Search"
+							placeholder="search here"
 							aria-label="Search"
 						/>
-						<button class="btn btn-outline-success" type="submit">
-							Search
+						<button
+							class="btn btn-outline-light rounded-end rounded-0"
+							type="submit"
+						>
+							<i class="bi bi-search"></i>
 						</button>
 					</form>
 				</div>
 			</div>
 		</nav>
+		<!-- HERO SECTION -->
+		<div
+			class="container-fluid d-flex align-items-center img-responsive"
+			style="background-image: url(/images/hero.png); height: 80vh"
+		>
+			<div class="row">
+				<div class="col-lg-8">
+					<span class="h1 fw-bold pt-3"
+						>Where your adventure will take you</span
+					>
+					<p class="col-lg-8 mt-4">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco.
+					</p>
+					<button type="button" class="btn btn-primary btn-lg mt-4 px-4">
+						Browse events
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- MAIN CARDS SECTION -->
+		<div class="container-lg mt-4">
+			<div class="row">
+				<div class="col-lg-6">
+					<h2 class="h3 fw-bold">Popular events</h2>
+					<p class="mt-4">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco. Ut enim ad minim
+						veniam, quis nostrud exercitation ullamco.
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- CARDS -->
+		<div class="container-lg mb-4">
+			<div class="row">
+				<div class="col-lg-4 py-3">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic1.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="detail.html">$99 USD</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary btn-sm px-2">Buy Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 py-3">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic2.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="#">$99 USD</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary btn-sm px-2">Buy Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 py-3">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic3.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="#">$99 USD</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary btn-sm px-2">Buy Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 py-3">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic4.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="#">$99 USD</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary btn-sm px-2">Buy Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 py-3">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic5.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="#">$99 USD</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary btn-sm px-2">Buy Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 pt-3">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic6.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="#">$99 USD</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="#" class="btn btn-primary btn-sm px-2">Buy Now</a>
+						</div>
+					</div>
+					<a href="#" class="d-flex justify-content-end">see more</a>
+				</div>
+			</div>
+		</div>
+		<!-- ARTIST SECTION -->
+		<div class="container-fluid pt-5 pb-3 bg-lightGreen">
+			<span class="h3 fw-bold d-flex justify-content-evenly"
+				>Popular Artists</span
+			>
+			<div class="row my-4 d-flex justify-content-evenly">
+				<div class="col-lg-2 text-center" id="artist">
+					<img
+						src="images/artist1.jpg"
+						class="rounded-circle"
+						alt="Troye Sivan"
+					/>
+					<p class="h5 fw-bold">Troye Sivan</p>
+					<p>
+						I've been doing the finishing touches on some client work recently
+						and a part of that is making sure we get 100s across the board in
+						Lighthouse.
+					</p>
+					<span><a href="#">learn more</a></span>
+				</div>
+				<div class="col-lg-2 text-center" id="artist">
+					<img
+						src="images/artist2.jpg"
+						class="rounded-circle"
+						alt="Tate McRae"
+					/>
+					<p class="h5 fw-bold">Tate McRae</p>
+					<p>
+						I've been doing the finishing touches on some client work recently
+						and a part of that is making sure .
+					</p>
+					<span><a href="#">learn more</a></span>
+				</div>
+				<div class="col-lg-2 text-center" id="artist">
+					<img
+						src="images/artist3.jpg"
+						class="rounded-circle"
+						alt="Sam Smith"
+					/>
+					<p class="h5 fw-bold">Sam Smith</p>
+					<p>
+						I've been doing the finishing touches on some client work recently
+						and a part of that is making sure we get 100s across the board in
+						Lighthouse the board in Lighthouse.
+					</p>
+					<span><a href="#">learn more</a></span>
+				</div>
+			</div>
+		</div>
+		<!-- Small cards section -->
+		<div class="container-lg mt-5">
+			<div class="row d-flex justify-content-between">
+				<div class="col-lg-6">
+					<h2 class="h3 fw-bold">You may also like</h2>
+					<p class="mt-4">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+						ultrices sit amet nulla non aliquam. Vivamus varius pretium nulla
+						vitae consectetur. Quisque sodales lobortis quam vel laoreet. Mauris
+						vitae eros convallis, maximus neque id, elementum augue. Aliquam
+						laoreet sem massa, ut cursus ligula tempor quis.
+					</p>
+				</div>
+				<div class="col-lg-4 mt-2">
+					<img
+						src="/images/Music genre icons.png"
+						style="width: 80%"
+						alt="Icons for every music genre"
+					/>
+				</div>
+			</div>
+		</div>
+		<!-- SMALL CARDS -->
+		<div class="container-fluid mt-2 bg-lightPink pt-4 pb-2">
+			<div class="container-lg">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card mb-3" id="sm-card">
+							<div class="row g-0 py-1">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="fw-bold">Card title</h5>
+										<p class="card-text mb-1">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											Aliquam justo libero, sollicitudin sed finibus quis,
+											pulvinar sit amet erat. Phasellus eu est et felis gravida
+											vulputate.
+										</p>
+										<span
+											><a class="text-secondary" href="#">View details</a></span
+										>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-evenly">
+									<img
+										src="/images/il-1.png"
+										class="img-fluid rounded-start"
+										style="width: 70%"
+										alt="Image of female enjoying"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card mb-3" id="sm-card">
+							<div class="row g-0 py-1">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="fw-bold">Card title</h5>
+										<p class="card-text mb-1">
+											Mauris vitae convallis purus, vitae fermentum enim.
+											Pellentesque aliquam.
+										</p>
+										<span class=""
+											><a class="text-secondary" href="#">View details</a></span
+										>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-evenly">
+									<img
+										src="/images/il-4.png"
+										class="img-fluid rounded-start"
+										style="width: 70%"
+										alt="Image of female enjoying"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card mb-3" id="sm-card">
+							<div class="row g-0 py-1">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="fw-bold">Card title</h5>
+										<p class="card-text mb-1">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<span
+											><a class="text-secondary" href="#">View details</a></span
+										>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-evenly">
+									<img
+										src="/images/il-5.png"
+										class="img-fluid rounded-start"
+										style="width: 70%"
+										alt="Image of female enjoying"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card mb-3" id="sm-card">
+							<div class="row g-0 py-1">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="fw-bold">Card title</h5>
+										<p class="card-text mb-1">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<span
+											><a class="text-secondary" href="#">View details</a></span
+										>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-evenly">
+									<img
+										src="/images/il-2.png"
+										class="img-fluid rounded-start"
+										style="width: 70%"
+										alt="Image of female enjoying"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card mb-3" id="sm-card">
+							<div class="row g-0 py-1">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="fw-bold">Card title</h5>
+										<p class="card-text mb-1">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<span
+											><a class="text-secondary" href="#">View details</a></span
+										>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-evenly">
+									<img
+										src="/images/il-3.png"
+										class="img-fluid rounded-start"
+										style="width: 70%"
+										alt="Image of female enjoying"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="card mb-3" id="sm-card">
+							<div class="row g-0 py-1">
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="fw-bold">Card title</h5>
+										<p class="card-text mb-1">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<span
+											><a class="text-secondary" href="#">View details</a></span
+										>
+									</div>
+								</div>
+								<div class="col-md-4 d-flex justify-content-evenly">
+									<img
+										src="/images/il-6.png"
+										class="img-fluid rounded-start"
+										style="width: 70%"
+										alt="Image of female enjoying"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer -->
+		<footer class="bg-primary text-white py-4">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-4">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna
+						</p>
+						<div class="d-flex">
+							<div class="col-7 pe-1">
+								<!-- Email input -->
+								<input
+									type="email"
+									class="form-control bg-transparent"
+									placeholder="your email"
+								/>
+							</div>
+							<div class="">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-outline-light mb-4">
+									Subscribe
+								</button>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+							ad minim. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do.
+						</p>
+					</div>
+					<div class="col-lg-5">
+						<div class="mb-3 bg-transparent">
+							<div class="row g-0 d-flex align-items-center">
+								<div class="col-md-6 text-end">
+									<ul class="">
+										<li>Our global Locations:</li>
+										<li><a href="#">Dublin</a></li>
+										<li><a href="#">Lisbon</a></li>
+										<li><a href="#">Vancouver</a></li>
+										<li><a href="#">New York</a></li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<img
+										src="/images/footer-il.png"
+										class="img-fluid"
+										style="width: 100%"
+										alt="..."
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-3">
+						<div class="col-lg-7">
+							<span class=""
+								>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor ut labore et dolore magna labore.</span
+							>
+						</div>
+						<div class="col-lg-5">
+							<p class="text-end">
+								© 2020 Copyright: <a href="#">EventSite</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

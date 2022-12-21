@@ -40,6 +40,9 @@ p{
   font-family: $font-family-body;
 }
 
+li{
+  list-style-type: none;
+}
 
 //functions + variables
 @import "../node_modules/bootstrap/scss/_functions";
@@ -145,7 +148,7 @@ $card-border-radius:                $card-rad;
 footer{
   font-size: small;
   li{
-    list-style-type: none;
+    // list-style-type: none;
     font-family: $font-family-body;
     font-size: medium;
     padding-bottom: 0.5rem;
@@ -171,5 +174,35 @@ footer{
   p{
     font-size: large;
   }
+  a{
+    font-family: $font-family-body;
+  }
+}
+
+#eventDetail{
+  ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    li{
+    font-family: $font-family-body;
+    font-size: large;
+    margin-bottom: 20px;
+  }
+}
+}
+#DateLoc{
+  font-size: large;
+  span{
+    padding-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    padding-bottom: 1rem;
+    li{
+    font-family: $font-family-body;
+  }
+}
 }
 @import "../node_modules/bootstrap/scss/bootstrap.scss"

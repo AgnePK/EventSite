@@ -7,6 +7,10 @@ p {
   font-family: "Source Sans Pro";
 }
 
+li {
+  list-style-type: none;
+}
+
 #card {
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1490196078);
 }
@@ -45,7 +49,6 @@ footer {
   font-size: small;
 }
 footer li {
-  list-style-type: none;
   font-family: "Source Sans Pro";
   font-size: medium;
   padding-bottom: 0.5rem;
@@ -62,6 +65,35 @@ footer span {
 
 #mainInfo p {
   font-size: large;
+}
+#mainInfo a {
+  font-family: "Source Sans Pro";
+}
+
+#eventDetail ul {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1rem;
+}
+#eventDetail ul li {
+  font-family: "Source Sans Pro";
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+#DateLoc {
+  font-size: large;
+}
+#DateLoc span {
+  padding-bottom: 10px;
+}
+#DateLoc ul {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1rem;
+}
+#DateLoc ul li {
+  font-family: "Source Sans Pro";
 }
 
 /*!

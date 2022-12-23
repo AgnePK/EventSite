@@ -209,4 +209,26 @@ footer{
   }
 }
 }
+
+// checkout page
+
+#billInfo {
+
+  input{
+    box-shadow: none;
+    transition: none;
+    font-family: $font-family-body;
+  }
+  
+  .input{
+    p{
+    font-family: $font-family-base;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: x-large;
+  }
+}
+}
+
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss"

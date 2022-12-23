@@ -175,7 +175,11 @@ footer{
     font-size: large;
   }
   a{
+    text-decoration: none;
     font-family: $font-family-body;
+  }
+  button a{
+    color: white;
   }
 }
 

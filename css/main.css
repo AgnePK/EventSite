@@ -67,7 +67,11 @@ footer span {
   font-size: large;
 }
 #mainInfo a {
+  text-decoration: none;
   font-family: "Source Sans Pro";
+}
+#mainInfo button a {
+  color: white;
 }
 
 #eventDetail ul {

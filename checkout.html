@@ -19,7 +19,7 @@
 		<!-- NAV BAR -->
 		<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#">music</a>
+				<a class="navbar-brand" href="/index.html">music</a>
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -90,7 +90,7 @@
 		<div class="container-lg py-5" id="billInfo">
 			<div class="row d-flex justify-content-between">
 				<div class="col-lg-7">
-					<h1 class="h3 py-3">Billing Information</h1>
+					<h1 class="h4 py-3">Billing Information</h1>
 					<div class="col-lg-12 input">
 						<div class="d-flex justify-content-between">
 							<div class="col-lg-5">
@@ -135,40 +135,100 @@
 					</div>
 				</div>
 				<div class="col-lg-4 details rounded bg-lightGreen">
-					<h3 class="h3 py-3">Your Order Information</h3>
+					<h3 class="h4 py-3">Your Order Information</h3>
 					<div class="d-flex justify-content-between">
-						<p class="fw-bold fs-4">Artist:</p>
-						<p class="fs-4">West Life</p>
+						<p class="fw-bold fs-5">Artist:</p>
+						<p class="fs-5">West Life</p>
 					</div>
 					<hr />
 					<div class="d-flex justify-content-between">
-						<p class="fw-bold fs-4">Date:</p>
-						<p class="fs-4">24 May</p>
+						<p class="fw-bold fs-5">Date:</p>
+						<p class="fs-5">24 May</p>
 					</div>
 					<hr />
 					<div class="d-flex justify-content-between">
-						<p class="fw-bold fs-4">Location:</p>
-						<p class="fs-4">3 Arena Dublin</p>
+						<p class="fw-bold fs-5">Location:</p>
+						<p class="fs-5">3 Arena Dublin</p>
 					</div>
 					<hr />
 					<div class="d-flex justify-content-between">
-						<p class="fw-bold fs-4">Time:</p>
-						<p class="fs-4">20:00</p>
+						<p class="fw-bold fs-5">Time:</p>
+						<p class="fs-5">20:00</p>
 					</div>
 					<hr />
 					<div class="d-flex justify-content-between">
-						<p class="fw-bold fs-4">Tickets:</p>
-						<p class="fs-4">x1</p>
+						<p class="fw-bold fs-5">Tickets:</p>
+						<p class="fs-5">x1</p>
 					</div>
 					<hr />
 					<div class="d-flex justify-content-between">
-						<p class="fw-bold fs-2">Total:</p>
-						<p class="fs-2 fw-bold">€45</p>
+						<p class="fw-bold fs-3">Total:</p>
+						<p class="fs-3 fw-bold">€45</p>
 					</div>
 					<hr />
-					<button type="button" class="btn btn-primary btn-lg px-4 mb-3">
+					<button
+						type="button"
+						class="btn btn-primary btn-lg px-4 mb-3 float-end"
+						data-bs-toggle="modal"
+						data-bs-target="#congratsModal"
+					>
 						Buy Tickets
 					</button>
+				</div>
+			</div>
+		</div>
+		<div
+			class="modal fade"
+			id="congratsModal"
+			tabindex="-1"
+			data-bs-backdrop="static"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content bg-lightPink">
+					<div class="modal-header">
+						<h1 class="modal-title fs-3" id="exampleModalLabel">
+							Congratulations!
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body d-flex">
+						<div>
+							<img
+								src="/images/WestLife.png"
+								class="img-responsive"
+								style="width: 50%; width:180px;"
+								alt=""
+							/>
+						</div>
+						<div class="ps-1">
+							<p class="fs-5">
+								You have bought <strong>1 ticket</strong> to
+								<strong>West Life</strong> <br />
+								On the <strong>24th of May</strong> <br />
+								At 20:00 <br>
+								In the <strong>3 Arena</strong>, Dublin
+							</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button type="button" class="btn btn-primary">
+							Download Tickets
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -69,8 +69,11 @@ $h6-font-size:                $font-size-base;
 
 //my body font colour
 $body-color:                $mainGray;
-//a link
 
+//a link
+a{
+  text-decoration: none;
+}
 
 //spacing
 $spacer: 1rem;
@@ -111,9 +114,6 @@ $card-border-radius:                $card-rad;
       position: absolute;
   }
 }
-
-//"learn more" links
-
 
 
 //artist section

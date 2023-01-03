@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+
+		<link rel="stylesheet" href="css/main.css" />
+		<title>Event Site</title>
+	</head>
+	<body>
+		<!-- NAV BAR -->
+		<nav class="navbar fixed-top navbar-expand-lg bg-primary navbar-dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="/index.html">music</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Genres</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>Location</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Date</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#"
+								>Parking</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								More
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">About Us</a></li>
+								<li><a class="dropdown-item" href="#">Contact Us</a></li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="#">Need Help?</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<form class="d-flex" role="search">
+						<input
+							class="form-control bg-transparent rounded-start rounded-0 text-white"
+							type="search"
+							placeholder="search here"
+							aria-label="Search"
+						/>
+						<button
+							class="btn btn-outline-light rounded-end rounded-0"
+							type="submit"
+						>
+							<i class="bi bi-search"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container mb-3 mt-5" id="mainInfo">
+			<div class="row g-5 justify-content-between">
+				<div class="col-lg-6 col-sm-12">
+					<img
+						src="/images/WestLife.png"
+						class="img-fluid rounded-start"
+						alt="Image of westlife on stage"
+					/>
+				</div>
+				<div class="col-lg-5 col-sm-12">
+					<h1 class="h2">
+						West <br />
+						Life
+					</h1>
+					<hr class="my-4 border-top border-primary border-2" />
+					<p class="mb-4">
+						Westlife is an Irish pop vocal group formed in Dublin, Ireland in
+						1998. The group currently consists of members Shane Filan, Mark
+						Feehily, Kian Egan, and Nicky Byrne. The group temporarily disbanded
+						in 2012 after 14 years of success and later reunited in 2018.
+					</p>
+					<a href="#">On Tour</a> <br />
+					<button type="button" class="btn btn-primary mt-4 px-2">
+						<a href="#DateLoc">View Tickets</a>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- event details section -->
+		<div class="container-fluid bg-lightGreen py-4">
+			<div class="container-lg" id="eventDetail">
+				<div class="row pt-2">
+					<div class="col-lg-4">
+						<h2 class="h4 pb-2">Event Details</h2>
+						<ul>
+							<li>
+								<i class="bi bi-calendar-event pe-2 fs-4"></i> 24 - 25 May 2023
+							</li>
+							<li><i class="bi bi-wallet2 pe-2 fs-4"></i> € 45 - 85</li>
+							<li>
+								<i class="bi bi-geo-alt pe-2 fs-4"></i>3 Arena, Dublin, Ireland
+							</li>
+							<li>
+								<i class="bi bi-globe pe-2 fs-4"></i
+								><a href="#">www.tychomusic.com</a>
+							</li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="col-lg-8">
+						<a
+							href="https://www.google.com/maps/place/3Arena/@53.3474767,-6.2312906,16.5z/data=!4m5!3m4!1s0x48670ef2ba5bd0ff:0xc462cb2728687754!8m2!3d53.3474963!4d-6.2285078"
+						>
+							<img
+								src="/images/maps.png"
+								style="width: 95%"
+								alt="Access to google maps"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ticket options section -->
+		<div class="container mt-4" id="DateLoc">
+			<div class="row">
+				<div class="col-lg-12">
+					<h3 class="h4 mb-3">Event date and location</h3>
+				</div>
+				<!-- put h3 into a div and give it its own col of 12 -->
+				<div class="col-lg-12">
+					<div class="col-lg-12 col-sm-8 d-lg-flex justify-content-between">
+						<div class="mb-2">
+							<span>Saturday</span>
+							<p class="my-2">24 May</p>
+							<span>20:00</span>
+						</div>
+						<div>
+							<span>Ticket Type:</span>
+							<ul class="mt-2">
+								<li>
+									<input
+										class="form-check-input me-1"
+										type="radio"
+										name="listGroupRadio"
+										checked
+									/>
+									<label for="firstRadio">General admission</label>
+								</li>
+								<li>
+									<input
+										class="form-check-input me-1"
+										type="radio"
+										name="listGroupRadio"
+									/>
+									<label for="secondRadio">Reserved seating</label>
+								</li>
+								<li>
+									<input
+										class="form-check-input me-1"
+										type="radio"
+										name="listGroupRadio"
+									/>
+									<label for="thirdRadio">VIP</label>
+								</li>
+							</ul>
+						</div>
+						<div >
+							<span>Ticket Amount:</span>
+							<div class="col-sm-3 d-flex fs-4">
+								<button class="bg-transparent border border-0 pb-1">
+									<i class="bi bi-dash-circle"></i>
+								</button>
+								<p class="pt-2 px-1">1</p>
+								<button class="bg-transparent border border-0 pb-1">
+									<i class="bi bi-plus-circle"></i>
+								</button>
+							</div>
+						</div>
+						<div>
+							<span>Price:</span>
+							<p class="mt-2">€45</p>
+						</div>
+						<div class="align-self-center pb-3">
+							<a href="/checkout.html">
+								<button type="button" class="btn btn-md btn-primary px-3">
+									Buy Now
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<hr class="mt-0" />
+				<div class="col-lg-12">
+					<div class="col-lg-12 d-lg-flex justify-content-between">
+						<div class="mb-2">
+							<span>Sunday</span>
+							<p class="my-2">25 May</p>
+							<span>20:00</span>
+						</div>
+						<div>
+							<span>Ticket Type:</span>
+							<ul class="mt-2">
+								<li>
+									<input
+										class="form-check-input me-1"
+										type="radio"
+										name="listGroupRadio"
+										checked
+									/>
+									<label for="firstRadio">General admission</label>
+								</li>
+								<li>
+									<input
+										class="form-check-input me-1"
+										type="radio"
+										name="listGroupRadio"
+									/>
+									<label for="secondRadio">Reserved seating</label>
+								</li>
+								<li>
+									<input
+										class="form-check-input me-1"
+										type="radio"
+										name="listGroupRadio"
+									/>
+									<label for="thirdRadio">VIP</label>
+								</li>
+							</ul>
+						</div>
+						<div class="col-sm-6">
+							<span>Ticket Amount:</span>
+							<div class="d-flex fs-4">
+								<button class="bg-transparent border border-0 pb-1">
+									<i class="bi bi-dash-circle"></i>
+								</button>
+								<p class="pt-2 px-1">1</p>
+								<button class="bg-transparent border border-0 pb-1">
+									<i class="bi bi-plus-circle"></i>
+								</button>
+							</div>
+						</div>
+						<div>
+							<span>Price:</span>
+							<p class="mt-2">€45</p>
+						</div>
+						<div class="align-self-center pb-3">
+							<a href="/checkout.html">
+								<button type="button" class="btn btn-md btn-primary px-3">
+									Buy Now
+								</button>
+							</a>
+						</div>
+					</div>
+					<hr class="m-0" />
+				</div>
+			</div>
+		</div>
+		<!-- Cards section -->
+		<div class="container">
+			<div class="row">
+				<h3 class="fs-1 mt-3">You also might like</h3>
+				<div class="col-lg-4 col-sm-6 py-2">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic1.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="detail.html">€99 EUR</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Some quick example text to build on the card title and make up
+								the bulk of the card's content.
+							</p>
+							<a href="checkout.html" class="btn btn-primary btn-sm px-2"
+								>Buy Now</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 py-2">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic2.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="detail.html">€64 EUR</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Travelling alteration impression six all uncommonly. Chamber
+								hearing inhabit joy highest private ask him our.
+							</p>
+							<a href="checkout.html" class="btn btn-primary btn-sm px-2"
+								>Buy Now</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 py-2">
+					<div class="card" id="card">
+						<div class="imgicon">
+							<img
+								src="images/pic3.png"
+								class="card-img-top img-responsive"
+								alt="image of 2 people playing  the acordian"
+							/>
+							<i class="bi bi-heart-fill h5"></i>
+						</div>
+
+						<div class="card-body">
+							<h5 class="card-title"><a href="detail.html">€25 EUR</a></h5>
+							<p class="card-text fw-bold">Some Random dudes</p>
+							<p class="card-text">
+								Entered of cordial do on no hearted. Yet agreed whence and
+								unable limits.
+							</p>
+							<a href="checkout.html" class="btn btn-primary btn-sm px-2"
+								>Buy Now</a
+							>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="d-flex justify-content-end mb-2">see more</a>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="bg-primary text-white py-4">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-lg-4">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna
+						</p>
+						<div class="d-flex">
+							<div class="col-7 pe-1">
+								<!-- Email input -->
+								<input
+									type="email"
+									class="form-control bg-transparent"
+									placeholder="your email"
+								/>
+							</div>
+							<div class="">
+								<!-- Submit button -->
+								<button type="submit" class="btn btn-outline-light mb-4">
+									Subscribe
+								</button>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+							ad minim. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+							sed do.
+						</p>
+					</div>
+					<div class="col-lg-5">
+						<div class="mb-3 bg-transparent">
+							<div class="row g-0 d-flex align-items-center">
+								<div class="col-lg-6 text-end">
+									<ul class="">
+										<li class="lead">Our global Locations:</li>
+										<li><a href="#">Dublin</a></li>
+										<li><a href="#">Lisbon</a></li>
+										<li><a href="#">Vancouver</a></li>
+										<li><a href="#">New York</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<img
+										src="/images/footer-il.png"
+										class="img-fluid"
+										style="width: 100%"
+										alt="..."
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mt-3">
+						<div class="col-lg-7">
+							<span class=""
+								>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor ut labore et dolore magna labore.</span
+							>
+						</div>
+						<div class="col-lg-5">
+							<p class="text-end">
+								© 2020 Copyright: <a href="#">EventSite</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

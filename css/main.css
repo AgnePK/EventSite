@@ -11,6 +11,10 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 #card {
   box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.1490196078);
 }

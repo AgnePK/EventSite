@@ -107,8 +107,7 @@ $card-border-radius:                $card-rad;
       position: absolute;
   }
 }
-.card-body{
-}
+
 
 //artist section
 #artist{
@@ -225,9 +224,11 @@ footer{
 }
 }
 
+//Map
+
 .map-responsive{
   overflow:hidden;
-  padding-bottom:56.25%;
+  padding-bottom:25%;
   position:relative;
   height:0;
 }

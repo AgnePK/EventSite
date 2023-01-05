@@ -39,7 +39,8 @@ a {
 }
 
 #sm-card {
-  height: 11.75rem;
+  min-height: 12.1rem;
+  height: fit-content;
 }
 #sm-card span {
   font-size: small;
